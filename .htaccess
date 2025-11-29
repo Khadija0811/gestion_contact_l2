@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteRule ^login$ login.php
+# Controller
+RewriteRule ^userController$ controller/userController.php
+RewriteRule ^contactController$ controller/contactController.php
+
+#Model
+RewriteRule ^userModel$ model/userModel.php
+RewriteRule ^contactModel$ model/contactModel.php
+
+# View
+RewriteRule ^listeUser$ view/users.php
+RewriteRule ^listeContact$ view/contacts.php
